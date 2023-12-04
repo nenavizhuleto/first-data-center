@@ -1,0 +1,138 @@
+---
+
+---
+<nav class="hidden md:block">
+  <ul class="flex">
+    <li class="inline-flex items-center gap-2 py-3 px-6 transition-all menu__item--sub">
+		<a class="leading-6">Услуги</a>
+		<ul class="list">
+		  <div class="list-wrapper">
+			<div class="group-title">Дата Центр</div>
+			<li class="item">
+			  <a class="leading-6" href="#">Аренда сервера</a>
+			</li>
+			<li class="item">
+			  <a class="leading-6" href="#">Размещение сервера</a>
+			</li>
+			<li class="item">
+			  <a class="leading-6" href="#">Покупка сервера в лизинг</a>
+			</li>
+			<li class="item">
+			  <a class="leading-6" href="#">Обслуживание и сервис</a>
+			</li>
+			<div class="group-title">Другие услуги</div>
+			<li class="item">
+			  <a class="leading-6" href="https://remont-telecom.ru/"
+				>Ремонт оборудования</a
+			  >
+			  <span class="external-ico">
+			  </span>
+			</li>
+			<li class="item">
+			  <a class="leading-6" href="https://datalab74.ru/">Восстановление данных</a>
+			  <span class="external-ico">
+			  </span>
+			</li>
+		  </div>
+		</ul>
+    </li>
+    <li class="inline-flex items-center gap-2 py-3 px-6">
+		<a class="leading-6" href="#">О нас</a>
+    </li>
+    <li class="inline-flex items-center gap-2 py-3 px-6">
+		<a class="leading-6" href="">Контакты</a>
+    </li>
+  </ul>
+</nav>
+
+<style lang="scss">
+
+@import "../../scss/vars";
+nav {
+  .menu__item a:hover {
+    color: $azure;
+  }
+  .menu__item--sub {
+    position: relative;
+    border-radius: 0.75rem;
+    transition: all 0.07s;
+  }
+  .menu__item--sub > svg {
+    width: 16px;
+    height: 16px;
+    transition: all 0.1s;
+  }
+  .menu__item--sub:hover {
+    background-color: $surface-light;
+  }
+  .menu__item--sub:hover > a {
+    color: $azure;
+  }
+  .menu__item--sub:hover > svg path {
+    stroke: $azure;
+  }
+  .menu__item--sub:hover > svg {
+    transform: rotate(-90deg);
+  }
+  // SHOW SUBMENU
+  .menu__item--sub:hover > .list {
+    visibility: visible;
+    opacity: 1;
+  }
+  .list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    // decorate space for correct hover show
+    padding-top: 1.5rem;
+
+    // HIDE SUBMENU
+    opacity: 0;
+    visibility: hidden;
+  }
+  .list-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: $border-radius;
+    background-color: $surface-light;
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.33);
+  }
+  .group-title {
+    display: flex;
+    padding: 1.25rem 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $stroke;
+    color: $text-light-gray;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem; /* 142.857% */
+    text-transform: uppercase;
+  }
+  .item {
+    width: 18rem;
+    padding: 1.25rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.5rem;
+
+    transition: all 0.1s;
+  }
+  .item > svg {
+    opacity: 0;
+    transition: all 0.1s;
+  }
+  .item:hover {
+    background: #2e303c;
+  }
+  .item:hover a {
+    color: $azure;
+  }
+  .item:hover > svg {
+    opacity: 1;
+  }
+}
+</style>
