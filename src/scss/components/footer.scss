@@ -1,0 +1,37 @@
+.footer{
+  padding: 3.5rem 0;
+  width: 100%;
+
+  background-color: $surface;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.footer__row {
+
+  display: flex;
+  justify-content: space-between;
+
+  gap: 2.5rem;
+}
+.logo {
+}
+.links {
+}
+.links__group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+}
+.footer__row.links{
+  // flex-wrap: wrap;
+}
+.footer__row.links .links__group:last-child{
+  justify-content: flex-end;
+}
+.socials {
+}
+.privacy {
+}

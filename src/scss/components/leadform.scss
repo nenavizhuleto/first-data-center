@@ -1,0 +1,279 @@
+// CONSULTATION
+.consultation__container {
+  display: flex;
+  padding: 4rem 3.5rem 3.5rem 3.5rem;
+  gap: 5rem;
+
+  border-radius: $border-radius;
+  background: #12121d;
+}
+
+.consulation__header {
+  margin-bottom: 6.5rem;
+}
+
+.consulation__header h2{
+  max-width: 50rem;
+}
+.consulation__header p{
+  max-width: 34rem;
+}
+
+.consultation__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.consultation__contacts .number a {
+  font-family: "Manrope";
+  color: $azure;
+}
+.consultation__contacts .number a:hover {
+  text-decoration: underline;
+}
+.messagers {
+  display: flex;
+  gap: 1rem;
+}
+
+// FORM
+
+form.form-lead {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+
+  margin-bottom: 6.5rem;
+}
+.text-field:not(:last-child){
+  margin-bottom: 2.5rem;
+}
+
+.form-lead__connect-selection {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-lead__submit-group button{
+  margin-right: 2rem;
+}
+
+.form-lead__submit-group{
+  display: flex;
+  align-items: center;
+}
+.privacy {
+  max-width: 25rem;
+  color: $text-light-gray;
+}
+.privacy a {
+  font-family: "Manrope";
+  text-transform: none;
+  color: $text-white;
+}
+
+.privacy a:hover {
+  text-decoration: underline;
+}
+
+// FIELD
+
+.text-field {
+  position: relative;
+
+  color: $text-white;
+}
+.text-field textarea {
+  resize: none;
+}
+.text-field textarea ::-webkit-scrollbar {
+  display: none;
+}
+.text-field input,
+textarea {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 1.25rem 1rem;
+
+  color: $text-white;
+
+  border-bottom: 1px solid $text-light-gray;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.text-field .placeholder,
+.supporting-text {
+  position: absolute;
+  transition: all 0.1s ease-in-out;
+  font-size: 0.875rem;
+}
+
+.text-field .placeholder {
+  top: -0.5rem;
+  left: 0.75rem;
+  padding: 0rem 0.25rem;
+
+  background-color: $page-bg;
+
+  width: 100%;
+}
+
+.text-field .supporting-text {
+  width: 100%;
+  padding: 0.25rem 1rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Hover */
+// .text-field:hover {
+//   color: $input-hover;
+// }
+// .text-field input:hover {
+//   border-color: $input-hover;
+// }
+// .text-field textarea:hover {
+//   border-color: $input-hover;
+// }
+
+/* Focus */
+
+.text-field input:focus {
+  border-color: $azure;
+}
+.text-field textarea:focus {
+  outline: none;
+  border-color: $azure;
+}
+
+.text-field:focus-within .placeholder {
+  color: $azure;
+}
+
+/* Error */
+
+.text-field.error input {
+  border-color: $error;
+}
+.text-field.error textarea {
+  border-color: $error;
+}
+.text-field.error .placeholder {
+  color: $error;
+}
+.text-field.error .supporting-text {
+  opacity: 1;
+  visibility: visible;
+  color: $error;
+}
+
+/* Disabled */
+
+.text-field input[disabled] {
+  border-color: $disabled;
+  pointer-events: none;
+}
+.text-field textarea[disabled] {
+  border-color: $disabled;
+  pointer-events: none;
+}
+.text-field input[disabled] + .placeholder {
+  color: $disabled;
+}
+
+// SWITCH
+
+.switch {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  width: 52px;
+  height: 32px;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-sizing: border-box;
+  border: 1px solid $text-gray;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 8px;
+  bottom: 7.5px;
+  background-color: $text-light-gray;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+input:checked + .slider {
+  background-color: $blue;
+  border-color: transparent;
+}
+// input:focus + .slider {
+//   border-color: $stroke-focused;
+// }
+
+input:checked + .slider:before {
+  background-color: #fcfcfc;
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px) scale(1.5);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width:420px){
+
+  .consultation__contacts {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .form-lead__submit-group{
+    flex-direction: column;
+  }
+
+  .form-lead__submit-group button{
+    align-self: stretch;
+
+    margin: 0 0 2rem 0;
+  }
+
+  .form-lead__submit-group .privacy{
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,71 @@
+@import 'vars';
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Manrope;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  overflow-x: hidden;
+  color: $text-white;
+  background-color: $page-bg;
+}
+body.scroll-lock {
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: calc(1440px + 5rem * 2);
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+.page__section {
+  padding: 6.25rem 0;
+}
+.page__hero {
+  height: 1040px;
+}
+
+@media screen and (max-width: 768px) {
+  .page__section {
+    padding: 4.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .page__hero {
+    padding: 0 1.5rem;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+  .page__section {
+    padding: 2.5rem 0;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $page-bg;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  margin: 0 22px;
+  border-radius: 20px;
+  background: $surface-light;
+  border: 1px solid $stroke;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: $stroke;
+}

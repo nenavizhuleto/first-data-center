@@ -1,0 +1,120 @@
+a {
+  color: $text-white;
+  font-style: normal;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  letter-spacing: 0.065rem;
+  transition: all 0.07s;
+}
+
+// PRIMARY BUTTON
+.primary-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  // for pseudo
+  position: relative;
+}
+.primary-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  background: linear-gradient(128deg, #8c34fa 23.76%, #283dfa 43.43%, #1ba7fa 73.96%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  border-radius: 12.5rem;
+  transition: all 0.2s;
+  opacity: 0;
+}
+.primary-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+
+  border-radius: 12.5rem;
+  border: 1px solid $text-white;
+  transition: all 0.2s;
+}
+.primary-button:hover:before {
+  opacity: 1;
+}
+.primary-button:hover::after {
+  opacity: 0;
+}
+
+.primary-button.disabled {
+  color: $disabled;
+  pointer-events: none;
+}
+.primary-button.disabled::after {
+  border-color: $disabled;
+}
+
+// SECONDARY BUTTON
+.secondary-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  border: 1px solid $text-white;
+  border-radius: 12.5rem;
+
+  transition: all 0.2s;
+}
+.secondary-button:hover {
+  background: rgba(252, 252, 252, 0.15);
+}
+.secondary-button:focus {
+  background: rgba(252, 252, 252, 0.15);
+}
+.secondary-button:active {
+  background: rgba(252, 252, 252, 0.3);
+}
+.secondary-button.disabled {
+  border-color: $disabled;
+  color: $disabled;
+}
+
+// button sizes
+.button-large {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.0625rem;
+}
+.button-medium {
+  padding: 0.875rem 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem; /* 142.857% */
+  letter-spacing: 0.05rem;
+}
+.button-small {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem; /* 133.333% */
+  letter-spacing: 0.03125rem;
+}
+.button-icon {
+  padding: 0.875rem;
+}
+
+@media (max-width: 480px) {
+  .button-large {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem; /* 142.857% */
+    letter-spacing: 0.05rem;
+  }
+}

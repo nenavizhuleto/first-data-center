@@ -1,0 +1,174 @@
+h1 {
+  /* Desktop/H-1_R_64_110% */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  font-size: 4rem;
+  line-height: 110%; /* 4.4rem */
+  letter-spacing: -0.064rem;
+}
+
+h2 {
+  /* Desktop/H-2_R_48_120% */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  font-size: 3rem;
+  line-height: 120%; /* 3.6rem */
+  letter-spacing: -0.048rem;
+
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+h3 {
+  /* Desktop/H-3_R_24_120% */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 1.5rem;
+  line-height: 120%; /* 1.8rem */
+}
+.body-1 {
+  /* Desktop/Body-1_R_18_180% */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 1.125rem;
+  line-height: 180%; /* 2.025rem */
+}
+.body-2 {
+  /* Desktop/Body-2_R_16_150% */
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 1rem;
+  line-height: 150%; /* 1.5rem */
+}
+.body-3 {
+  /* Desktop/Body-3_R_14_140% */
+  font-family: Manrope;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 0.875rem;
+  line-height: 140%; /* 1.225rem */
+}
+.body-caption {
+  /* Desktop/Caption_14_20 */
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+
+  font-size: 0.875rem;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    /* Tablet/H-1_R_48_110% */
+    font-size: 3rem;
+    line-height: 110%; /* 3.3rem */
+    letter-spacing: -0.048rem;
+  }
+  h2 {
+    /* Tablet/H-2_R_40_120% */
+    font-size: 2.5rem;
+    line-height: 120%; /* 4.4rem */
+    letter-spacing: -0.04rem;
+  }
+  h3 {
+    /* Tablet/H-3_SB_20_120% */
+    font-size: 1.25rem;
+    line-height: 120%; /* 1.5rem */
+  }
+  .body-1 {
+    /* Tablet/Body-1_R_16_150% */
+    font-size: 1rem;
+    line-height: 150%; /* 1.5rem */
+  }
+  .body-2 {
+    /* Tablet/Body-2_R_14_140% */
+    font-size: 0.875rem;
+    line-height: 140%; /* 1.225rem */
+  }
+  .body-3 {
+    /* Tablet/Body-3_R_12_130% */
+    font-size: 0.75rem;
+    line-height: 130%; /* 0.975rem */
+  }
+  .body-caption {
+    /* Tablet/Caption_12_16 */
+    font-size: 0.75rem;
+    line-height: 1rem; /* 133.333% */
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    /* Mobile/H-1_R_40_110% */
+    font-size: 2.5rem;
+    line-height: 110%; /* 2.75rem */
+    letter-spacing: -0.04rem;
+  }
+  h2 {
+    /* Mobile/H-2_R_32_120% */
+    font-size: 2rem;
+    line-height: 120%; /* 2.4rem */
+    letter-spacing: -0.032rem;
+  }
+  h3 {
+    /* Mobile/H-3_R_18_120% */
+    font-size: 1.125rem;
+    line-height: 120%; /* 1.35rem */
+  }
+  .body-1 {
+    /* Mobile/Body-1_R_16_140% */
+    font-size: 1rem;
+    line-height: 140%; /* 1.4rem */
+  }
+  .body-2 {
+    /* Mobile/Body-2_R_14_130% */
+    font-size: 0.875rem;
+    line-height: 140%; /* 1.225rem */
+  }
+  .body-3 {
+    /* Mobile/Body-3_R_12_120% */
+    font-size: 0.75rem;
+    line-height: 140%; /* 1.05rem */
+  }
+  .body-caption {
+    /* Mobile/Caption_12_14 */
+    font-size: 0.75rem;
+    line-height: 0.875rem; /* 116.667% */
+  }
+}
+
+input,
+textarea {
+  /* Fields/Placeholder_16_24 */
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+label,
+.supporting-text {
+  /* Fields/Label_12_16 */
+  font-family: Manrope;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; /* 133.333% */
+}
