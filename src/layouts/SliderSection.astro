@@ -1,0 +1,66 @@
+---
+import ConfigCard from "../components/ConfigCard.astro";
+import Icon from "../components/Icon.astro";
+
+
+interface Props {
+	title: string;
+	subtitle: string;
+}
+
+const {title, subtitle} = Astro.props
+
+---
+
+<section class="overflow-hidden">
+  <div class="container">
+    <div class="flex justify-between items-end mb-28">
+      <div>
+        <h2>{title}</h2>
+        <p class="max-w-md">
+          {subtitle}
+        </p>
+      </div>
+      <!-- Slider Navigations -->
+      <div class="slider__nav-buttons slider-nav">
+        <span class="slider-nav__button slider-prev">
+          <Icon icon="caretLeft" size="24px" />
+        </span>
+        <span class="slider-nav__button slider-next">
+          <Icon icon="caretRight" size="24px" />
+        </span>
+      </div>
+    </div>
+    <!-- Config Slider -->
+    <div class="card-slider swiper !overflow-visible">
+      <div class="swiper-wrapper">
+        <slot/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../scss/vars";
+  .slider-nav {
+    display: flex;
+    gap: 1rem;
+  }
+  .slider-nav__button {
+    display: inline-flex;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid $text-white;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .slider-nav__button:hover {
+    border-color: $azure;
+    background-color: rgba(27, 167, 250, 0.1);
+  }
+  @media screen and (max-width: 640px) {
+    .slider__nav-buttons {
+      display: none;
+    }
+  }
+</style>

@@ -1,5 +1,6 @@
 ---
-import Icon from './Icon.astro'
+import Icon from "./Icon.astro";
+import Button from "./Button.astro";
 ---
 
 <header class="header">
@@ -72,142 +73,45 @@ import Icon from './Icon.astro'
           </defs>
         </svg>
       </div>
+      <!-- Desktop Header Nav -->
       <nav class="header__menu">
         <ul class="menu__list">
           <li class="menu__item menu__item--sub">
             <a>Услуги</a>
-              <Icon class="arrowDown" icon="arrowRight" color="#ffffff" size='24px'/>
+            <Icon
+              class="arrowDown"
+              icon="caretDown"
+              color="#ffffff"
+              size="20px"
+            />
             <ul class="submenu__list">
               <div class="submenu__list-wrapper">
                 <div class="submenu__group-title">Дата Центр</div>
                 <li class="submenu__item">
                   <a href="#">Аренда сервера</a>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
-                      stroke="#1BA7FA"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
+                  <Icon icon="caretRight" color="#1ba7fa" size="24px" />
                 </li>
                 <li class="submenu__item">
                   <a href="#">Размещение сервера</a>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
-                      stroke="#1BA7FA"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
+                  <Icon icon="caretRight" color="#1ba7fa" size="24px" />
+
                 </li>
                 <li class="submenu__item">
                   <a href="#">Покупка сервера в лизинг</a>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
-                      stroke="#1BA7FA"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
+                  <Icon icon="caretRight" color="#1ba7fa" size="24px" />
                 </li>
                 <li class="submenu__item">
                   <a href="#">Обслуживание и сервис</a>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
-                      stroke="#1BA7FA"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
+                  <Icon icon="caretRight" color="#1ba7fa" size="24px" />
                 </li>
                 <div class="submenu__group-title">Другие услуги</div>
                 <li class="submenu__item">
                   <a href="https://remont-telecom.ru/">Ремонт оборудования</a>
-                  <span class="external-ico">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                    >
-                      <path
-                        d="M8.66663 7.3333L14.1333 1.86664"
-                        stroke="#FCFCFC"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                      <path
-                        d="M14.6667 4.53331V1.33331H11.4667"
-                        stroke="#FCFCFC"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                      <path
-                        d="M7.33337 1.33331H6.00004C2.66671 1.33331 1.33337 2.66665 1.33337 5.99998V9.99998C1.33337 13.3333 2.66671 14.6666 6.00004 14.6666H10C13.3334 14.6666 14.6667 13.3333 14.6667 9.99998V8.66665"
-                        stroke="#FCFCFC"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    </svg>
-                  </span>
+                  <Icon icon="externalLink" size="24px" color="#1ba7fa"/>
                 </li>
                 <li class="submenu__item">
                   <a href="https://datalab74.ru/">Восстановление данных</a>
-                  <span class="external-ico">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                    >
-                      <path
-                        d="M8.66663 7.3333L14.1333 1.86664"
-                        stroke="#FCFCFC"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                      <path
-                        d="M14.6667 4.53331V1.33331H11.4667"
-                        stroke="#FCFCFC"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                      <path
-                        d="M7.33337 1.33331H6.00004C2.66671 1.33331 1.33337 2.66665 1.33337 5.99998V9.99998C1.33337 13.3333 2.66671 14.6666 6.00004 14.6666H10C13.3334 14.6666 14.6667 13.3333 14.6667 9.99998V8.66665"
-                        stroke="#FCFCFC"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    </svg>
-                  </span>
+                    <Icon icon="externalLink" size="24px" color="#1ba7fa"/>
                 </li>
               </div>
             </ul>
@@ -220,6 +124,7 @@ import Icon from './Icon.astro'
           </li>
         </ul>
       </nav>
+      <!-- Mobile Header Nav -->
       <div class="burger">
         <div class="strip burger-strip">
           <div></div>
@@ -233,83 +138,19 @@ import Icon from './Icon.astro'
             <ul class="mobile-menu__services-list">
               <li class="mobile-menu__service">
                 <a href="#">Аренда сервера</a>
-                <span class="arrow-right">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                  >
-                    <path
-                      d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999"
-                      stroke="#FCFCFC"
-                      stroke-width="2.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                <Icon icon="caretRight" color="#ffffff" size="32px" />
               </li>
               <li class="mobile-menu__service">
                 <a href="#">Размещение сервера</a>
-                <span class="arrow-right">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                  >
-                    <path
-                      d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999"
-                      stroke="#FCFCFC"
-                      stroke-width="2.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                <Icon icon="caretRight" color="#ffffff" size="32px" />
               </li>
               <li class="mobile-menu__service">
                 <a href="#">Сервер в лизинг</a>
-                <span class="arrow-right">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                  >
-                    <path
-                      d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999"
-                      stroke="#FCFCFC"
-                      stroke-width="2.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                <Icon icon="caretRight" color="#ffffff" size="32px" />
               </li>
               <li class="mobile-menu__service">
                 <a href="#">Обслуживание и сервис</a>
-                <span class="arrow-right">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                  >
-                    <path
-                      d="M14.85 33.2L25.7166 22.3333C27 21.05 27 18.95 25.7166 17.6667L14.85 6.79999"
-                      stroke="#FCFCFC"
-                      stroke-width="2.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                <Icon icon="caretRight" color="#ffffff" size="32px" />
               </li>
             </ul>
           </nav>
@@ -325,55 +166,11 @@ import Icon from './Icon.astro'
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item external-link">
                 <a href="#">Ремонт оборудования</a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M8.66663 7.3333L14.1333 1.86664"
-                    stroke="#FCFCFC"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M14.6667 4.53331V1.33331H11.4667"
-                    stroke="#FCFCFC"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M7.33337 1.33331H6.00004C2.66671 1.33331 1.33337 2.66665 1.33337 5.99998V9.99998C1.33337 13.3333 2.66671 14.6666 6.00004 14.6666H10C13.3334 14.6666 14.6667 13.3333 14.6667 9.99998V8.66665"
-                    stroke="#FCFCFC"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
+                <Icon icon="externalLink" size="24px" color="#ffffff"/>
               </li>
               <li class="mobile-menu__item external-link">
                 <a href="#">Восстановление данных</a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M8.66663 7.3333L14.1333 1.86664"
-                    stroke="#FCFCFC"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M14.6667 4.53331V1.33331H11.4667"
-                    stroke="#FCFCFC"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                  <path
-                    d="M7.33337 1.33331H6.00004C2.66671 1.33331 1.33337 2.66665 1.33337 5.99998V9.99998C1.33337 13.3333 2.66671 14.6666 6.00004 14.6666H10C13.3334 14.6666 14.6667 13.3333 14.6667 9.99998V8.66665"
-                    stroke="#FCFCFC"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></path>
-                </svg>
+                <Icon icon="externalLink" size="24px" color="#ffffff"/>
               </li>
             </ul>
           </nav>
@@ -383,308 +180,308 @@ import Icon from './Icon.astro'
   </div>
 </header>
 
-
 <style lang="scss">
+  @import "../scss/vars";
 
-@import "../scss/vars";
-
-.header {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1.5rem 0rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(180deg, rgba(5, 6, 12, 0.87) 0.33%, rgba(5, 6, 12, 0) 100%);
-}
-.header__content {
-  flex-basis: 100%;
-  max-width: 1440px;
-  display: flex;
-  justify-content: space-between;
-}
-.header__logo {
-  display: inline;
-  width: fit-content;
-}
-
-.header__menu {
-  .menu__list {
-    display: flex;
-  }
-  .menu__list a {
-    line-height: 1.5rem; /* 150% */
-  }
-  .menu__item {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-
-    transition: all 0.1s;
-  }
-  .menu__item a:hover {
-    color: $azure;
-  }
-  .menu__item--sub {
-    position: relative;
-    border-radius: 0.75rem;
-    transition: all 0.07s;
-  }
-  .menu__item--sub > .arrowDown {
-    width: 16px;
-    height: 16px;
-    transition: all 0.1s;
-  }
-  .menu__item--sub:hover {
-    background-color: $surface-light;
-  }
-  .menu__item--sub:hover > a {
-    color: $azure;
-  }
-  .menu__item--sub:hover > .arrowDown {
-    fill: $azure;
-    stroke: $azure;
-  }
-  .menu__item--sub:hover > .arrowDown {
-    transform: rotate(-90deg);
-  }
-  // SHOW SUBMENU
-  .menu__item--sub:hover > .submenu__list {
-    visibility: visible;
-    opacity: 1;
-  }
-  .submenu__list {
-    position: absolute;
-    top: 100%;
-    left: 0;
+  .header {
+    position: fixed;
     z-index: 1000;
-    // decorate space for correct hover show
-    padding-top: 1.5rem;
-
-    // HIDE SUBMENU
-    opacity: 0;
-    visibility: hidden;
-  }
-  .submenu__list-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0rem;
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: $border-radius;
-    background-color: $surface-light;
-    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.33);
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      180deg,
+      rgba(5, 6, 12, 0.87) 0.33%,
+      rgba(5, 6, 12, 0) 100%
+    );
   }
-  .submenu__group-title {
-    display: flex;
-    padding: 1.25rem 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid $stroke;
-    color: $text-light-gray;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.25rem; /* 142.857% */
-    text-transform: uppercase;
-  }
-  .submenu__item {
-    width: 18rem;
-    padding: 1.25rem 1rem;
+  .header__content {
+    flex-basis: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+  .header__logo {
+    display: inline;
+    width: fit-content;
+  }
 
-    border-radius: 0.5rem;
-
-    transition: all 0.1s;
-  }
-  .submenu__item > svg {
-    opacity: 0;
-    transition: all 0.1s;
-  }
-  .submenu__item:hover {
-    background: #2e303c;
-  }
-  .submenu__item:hover a {
-    color: $azure;
-  }
-  .submenu__item:hover > svg {
-    opacity: 1;
-  }
-}
-
-.burger {
-  display: none;
-}
-@media (max-width: 1000px) {
   .header__menu {
-    display: none;
+    .menu__list {
+      display: flex;
+    }
+    .menu__list a {
+      line-height: 1.5rem; /* 150% */
+    }
+    .menu__item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+
+      transition: all 0.1s;
+    }
+    .menu__item a:hover {
+      color: $azure;
+    }
+    .menu__item--sub {
+      position: relative;
+      border-radius: 0.75rem;
+      transition: all 0.07s;
+    }
+    .menu__item--sub > .arrowDown {
+      transition: all 0.1s;
+    }
+    .menu__item--sub:hover {
+      background-color: $surface-light;
+    }
+    .menu__item--sub:hover > a {
+      color: $azure;
+    }
+    .menu__item--sub:hover > .arrowDown {
+      fill: $azure;
+      stroke: $azure;
+    }
+    .menu__item--sub:hover > .arrowDown {
+      transform: rotate(-90deg);
+    }
+    // SHOW SUBMENU
+    .menu__item--sub:hover > .submenu__list {
+      visibility: visible;
+      opacity: 1;
+    }
+    .submenu__list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      // decorate space for correct hover show
+      padding-top: 1.5rem;
+
+      // HIDE SUBMENU
+      opacity: 0;
+      visibility: hidden;
+    }
+    .submenu__list-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: $border-radius;
+      background-color: $surface-light;
+      box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.33);
+    }
+    .submenu__group-title {
+      display: flex;
+      padding: 1.25rem 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $stroke;
+      color: $text-light-gray;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.25rem; /* 142.857% */
+      text-transform: uppercase;
+    }
+    .submenu__item {
+      width: 22rem;
+      padding: 1.25rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border-radius: 0.5rem;
+
+      transition: all 0.1s;
+    }
+    .submenu__item > svg {
+      flex-shrink: 0;
+      opacity: 0;
+      transition: all 0.1s;
+    }
+    .submenu__item:hover {
+      background: #2e303c;
+    }
+    .submenu__item:hover a {
+      color: $azure;
+    }
+    .submenu__item:hover > svg {
+      opacity: 1;
+    }
   }
 
   .burger {
-    display: block;
+    display: none;
   }
-}
-@media (max-width: 480px) {
-  .header {
-    padding: 1.5rem 1.5rem;
+  @media (max-width: 1000px) {
+    .header__menu {
+      display: none;
+    }
+
+    .burger {
+      display: block;
+    }
   }
-}
+  @media (max-width: 480px) {
+    .header {
+      padding: 1.5rem 1.5rem;
+    }
+  }
 
-// MOBILE MENU
-.header.active .header__mobile-menu {
-  top: 0;
-  visibility: visible;
-  opacity: 1;
-}
-.header .header__logo path {
-  transition: all 0.6s;
-}
-.header.active .header__logo path {
-  fill: #ffffffd8;
-}
+  // MOBILE MENU
+  .header.active .header__mobile-menu {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  .header .header__logo path {
+    transition: all 0.6s;
+  }
+  .header.active .header__logo path {
+    fill: #ffffffd8;
+  }
 
-.strip div {
-  height: 2px;
-  border-radius: 2px;
-  background: rgb(255, 255, 255);
-  margin: 10px;
-  transition: all 0.55s cubic-bezier(0.075, 0.82, 0.165, 1);
-  width: 30px;
-}
-.strip div:nth-child(2) {
-  width: 15px;
-  margin-left: 25px;
-}
-.burger-strip div {
-  /* margin: 10px auto; */
-  transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.header.active .burger .burger-strip div:first-child {
-  transform: translateY(10px) rotate(0deg) scaleX(1.5);
-}
-.header.active .burger .burger-strip div:nth-child(2) {
-  opacity: 0;
-}
-.header.active .burger .burger-strip div:last-child {
-  transform: translateY(-14px) rotate(90deg) scaleX(1.5);
-}
-.header.active .burger .burger-strip {
-  transform: scale(0.7) rotate(45deg);
-  transition: all 0.5s ease 0.1s;
-}
+  .strip div {
+    height: 2px;
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+    transition: all 0.55s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 30px;
+  }
+  .strip div:nth-child(2) {
+    width: 15px;
+    margin-left: 25px;
+  }
+  .burger-strip div {
+    /* margin: 10px auto; */
+    transition: all 0.65s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .header.active .burger .burger-strip div:first-child {
+    transform: translateY(10px) rotate(0deg) scaleX(1.5);
+  }
+  .header.active .burger .burger-strip div:nth-child(2) {
+    opacity: 0;
+  }
+  .header.active .burger .burger-strip div:last-child {
+    transform: translateY(-14px) rotate(90deg) scaleX(1.5);
+  }
+  .header.active .burger .burger-strip {
+    transform: scale(0.7) rotate(45deg);
+    transition: all 0.5s ease 0.1s;
+  }
 
-.header__mobile-menu {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  top: -990px;
-  left: 0;
-  width: 100%;
-  max-height: 100vh;
-  z-index: -1000;
-  overflow-y: auto;
-  padding: 10rem 2.5rem 7.5rem 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-image: url("img/mobile-menu-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  transition: all 0.6s;
-}
-.mobile-menu__content {
-  max-width: 1200px;
-  display: flex;
-  flex-basis: 100%;
-  justify-content: space-between;
-}
-.mobile-menu__services {
-}
-.mobile-menu__services-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-.mobile-menu__service {
-  align-self: stretch;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-
-  padding: 1.125rem 0rem;
-
-  border-bottom: 2px solid rgba(252, 252, 252, 0.7);
-}
-.mobile-menu__service a {
-  font-family: $main-font-family;
-  font-size: 2rem;
-  line-height: 120%; /* 2.4rem */
-  letter-spacing: -0.032rem;
-}
-.mobile-menu__nav {
-  flex-shrink: 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
-.mobile-menu__list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1.5rem;
-}
-.mobile-menu__item a {
-  font-size: 1.25rem;
-}
-.external-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-@media (max-width: 880px) {
   .header__mobile-menu {
-    padding:8.75rem 2.5rem 4rem 2.5rem;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: -990px;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    z-index: -1000;
+    overflow-y: auto;
+    padding: 10rem 2.5rem 7.5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/mobile-menu-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 0.6s;
   }
   .mobile-menu__content {
-    flex-direction: column;
-    gap: 4rem;
+    max-width: 1200px;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
   }
-  .mobile-menu__nav {
-    flex-direction: row;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-  }
-  .mobile-menu__list {
-    align-items: flex-start;
-  }
-}
-@media (max-width: 480px) {
-  .header__mobile-menu {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .mobile-menu__services {
   }
   .mobile-menu__services-list {
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .mobile-menu__service {
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    padding: 1.125rem 0rem;
+
+    border-bottom: 2px solid rgba(252, 252, 252, 0.7);
   }
   .mobile-menu__service a {
-    font-size: 1.75rem;
+    font-family: $main-font-family;
+    font-size: 2rem;
+    line-height: 120%; /* 2.4rem */
+    letter-spacing: -0.032rem;
   }
   .mobile-menu__nav {
-    gap: 4rem;
+    flex-shrink: 0;
+
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1rem 0;
   }
   .mobile-menu__list {
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
+    gap: 1.5rem;
   }
-}
+  .mobile-menu__item a {
+    font-size: 1.25rem;
+  }
+  .external-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
+  @media (max-width: 880px) {
+    .header__mobile-menu {
+      padding: 8.75rem 2.5rem 4rem 2.5rem;
+    }
+    .mobile-menu__content {
+      flex-direction: column;
+      gap: 4rem;
+    }
+    .mobile-menu__nav {
+      flex-direction: row;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .mobile-menu__list {
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 480px) {
+    .header__mobile-menu {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .mobile-menu__services-list {
+      gap: 1.5rem;
+    }
+    .mobile-menu__service a {
+      font-size: 1.75rem;
+    }
+    .mobile-menu__nav {
+      gap: 4rem;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .mobile-menu__list {
+      align-items: flex-end;
+    }
+  }
 </style>

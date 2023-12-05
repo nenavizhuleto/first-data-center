@@ -8,7 +8,7 @@ burgerButton.addEventListener("click", () => {
 
 // init Swiper:
 
-new Swiper(".config__list", {
+new Swiper(".card-slider", {
 	// Optional parameters
 	spaceBetween: 24,
 	direction: "horizontal",
